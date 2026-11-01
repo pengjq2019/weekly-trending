@@ -1,0 +1,54 @@
+name: Weekly GitHub Trending Digest
+
+on:
+  schedule:
+    # 每周一早晨 09:00 (北京时间 UTC+8，即 UTC 01:00) 自动触发
+    - cron: '0 1 * * 1'
+  workflow_dispatch: # 支持在 GitHub Actions 页面手动点击 "Run workflow" 立即触发
+
+permissions:
+  contents: write
+
+jobs:
+  run-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 设置 Python 运行环境
+        uses: setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: 安装 Python 依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 执行热榜抓取、AI提炼与微信推送
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
+          WECHAT_WORK_KEY: ${{ secrets.WECHAT_WORK_KEY }}
+          RECIPIENT_NAME: ${{ vars.RECIPIENT_NAME || '嘉贤' }}
+          USER_INTERESTS: ${{ vars.USER_INTERESTS || 'AI Agent、游戏开发/Unity、音色克隆与多模态、代码辅助工具与架构、开源工具生态' }}
+        run: |
+          python main.py
+
+      - name: 将历史记录与最新简报提交回仓库
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add history.json latest_report.md
+          if git diff --staged --quiet; then
+            echo "没有需要提交的新内容"
+          else
+            git commit -m "chore: update trending digest & history [skip ci]"
+            git push
+          fi
