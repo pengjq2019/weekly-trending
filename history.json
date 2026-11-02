@@ -1,6 +1,6 @@
 {
   "last_run_date": "11/02",
-  "last_run_iso": "2026-11-02T16:52:07.937405",
+  "last_run_iso": "2026-11-02T09:33:09.809236",
   "last_repos": [
     "Nutlope/hallmark",
     "pbakaus/impeccable",
@@ -26,69 +26,83 @@
     },
     "cloudflare/security-audit-skill": {
       "first_seen": "10/31",
-      "times_seen": 2,
+      "times_seen": 3,
       "last_seen": "11/02"
     },
     "pbakaus/impeccable": {
       "first_seen": "10/31",
-      "times_seen": 2,
+      "times_seen": 3,
       "last_seen": "11/02"
     },
     "Nutlope/hallmark": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "AgriciDaniel/claude-seo": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "thedotmack/claude-mem": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "obra/superpowers": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "JetBrains/thinkrail": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "pingdotgg/t3code": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "multica-ai/andrej-karpathy-skills": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "jakubkrehel/skills": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "TauricResearch/TradingAgents": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "Leonxlnx/taste-skill": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "anthropics/skills": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "affaan-m/ECC": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "YuJunZhiXue/dsh-purge": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     },
     "ghostty-org/ghostty": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/02"
     }
   }
 }
