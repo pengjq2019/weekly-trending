@@ -1,15 +1,23 @@
 {
-  "last_run_date": "10/31",
-  "last_run_iso": "2026-10-31T09:00:00+08:00",
+  "last_run_date": "11/02",
+  "last_run_iso": "2026-11-02T09:59:52.844731",
   "last_repos": [
-    "debpalash/VoiceStudio",
-    "cloudflare/security-audit-skill",
+    "Nutlope/hallmark",
     "pbakaus/impeccable",
-    "HKUDS/DeepTutor",
-    "affaan-m/ECC",
+    "AgriciDaniel/claude-seo",
+    "thedotmack/claude-mem",
+    "cloudflare/security-audit-skill",
     "obra/superpowers",
+    "JetBrains/thinkrail",
+    "pingdotgg/t3code",
+    "multica-ai/andrej-karpathy-skills",
+    "jakubkrehel/skills",
     "TauricResearch/TradingAgents",
-    "NVIDIA/SkillSpector"
+    "Leonxlnx/taste-skill",
+    "anthropics/skills",
+    "affaan-m/ECC",
+    "YuJunZhiXue/dsh-purge",
+    "ghostty-org/ghostty"
   ],
   "history_archive": {
     "debpalash/VoiceStudio": {
@@ -18,11 +26,69 @@
     },
     "cloudflare/security-audit-skill": {
       "first_seen": "10/31",
-      "times_seen": 2
+      "times_seen": 3,
+      "last_seen": "11/02"
     },
     "pbakaus/impeccable": {
       "first_seen": "10/31",
-      "times_seen": 2
+      "times_seen": 3,
+      "last_seen": "11/02"
+    },
+    "Nutlope/hallmark": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "AgriciDaniel/claude-seo": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "thedotmack/claude-mem": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "obra/superpowers": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "JetBrains/thinkrail": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "pingdotgg/t3code": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "multica-ai/andrej-karpathy-skills": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "jakubkrehel/skills": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "TauricResearch/TradingAgents": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "Leonxlnx/taste-skill": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "anthropics/skills": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "affaan-m/ECC": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "YuJunZhiXue/dsh-purge": {
+      "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "ghostty-org/ghostty": {
+      "first_seen": "11/02",
+      "times_seen": 1
     }
   }
 }

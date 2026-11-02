@@ -1,37 +1,27 @@
-嘉贤，这周 GitHub 热榜的简报来了。🆕 这周没有新上榜的项目，但我们关注的领域里的一些持续在榜的项目值得关注。
+彭杰仔，这周 GitHub 热榜的简报来了。🆕 表示 10/31 那次简报之后 新上榜的项目：
 
-🆕 上次就在、这次还在榜上的有：
+🆕 Nutlope/hallmark，本周 +11,566⭐。这个项目是 Claude Code、Cursor 和 Codex 的反 AI 拖沓设计技巧，听起来像是专门用来去掉界面上的 AI 味，对于想要提升 AI 交互体验的项目来说很实用。
 
-1. Nutlope/hallmark，本周 +11,566⭐。这个项目是 Claude Code 的反 AI 设计技能，专门用来去掉界面上的 AI 味，宠物 agent 的记忆设计很值得参考它。
+🆕 AgriciDaniel/claude-seo，本周 +5,034⭐。这是一个通用的 SEO 技能，涵盖了从技术 SEO 到本地 SEO、电子商务等多个方面，对于需要优化搜索引擎排名的项目来说是个宝库。
 
-2. pbakaus/impeccable，本周 +12,017⭐。Rust 编程的 AI 代理设计词汇库，帮你提高编码效率和代码质量，Unity 项目变大可以用它来管理代码。
+🆕 thedotmack/claude-mem，本周 +5,852⭐。这个项目提供跨会话的持久上下文，对于宠物 agent 的记忆设计很值得参考它，可以让你的 agent 在不同会话中保持一致性。
 
-3. AgriciDaniel/claude-seo，本周 +5,034⭐。这个 Python 项目为 Claude Code 提供了全面的 SEO 技能，从技术 SEO 到本地 SEO，一应俱全。
+🆕 JetBrains/thinkrail，本周 +5,760⭐。这是一个轻量级的 IDE，可以根据你的工作方式自定义，对于 Unity 项目变大可以用它来管理代码，听起来很实用。
 
-4. thedotmack/claude-mem，本周 +5,852⭐。TypeScript 写的持久化上下文，可以捕捉代理在会话中的所有操作，并在未来的会话中注入相关上下文。
+🆕 pingdotgg/t3code，本周 +6,926⭐。热度不低，但仓库没写简介，不知道具体是做什么的，但 TypeScript 项目的热度总是值得关注的。
 
-5. cloudflare/security-audit-skill，本周 +10,069⭐。JavaScript 编写的编码代理技能，用于多阶段安全审计，提供机器可读的发现结果。
+🆕 multica-ai/andrej-karpathy-skills，本周 +4,459⭐。这是一个基于 Andrej Karpathy 观察的 Claude Code 编码陷阱的 CLAUDE.md 文件，对于想要改进 Claude Code 行为的项目来说是个好资源。
 
-6. obra/superpowers，本周 +5,896⭐。Shell 编程的代理技能框架，是一个有效的软件开发方法论。
+🆕 jakubkrehel/skills，本周 +1,607⭐。这是一个收集了各种 agent 技能的 Markdown 文件，对于想要构建优秀界面的项目来说很有帮助。
 
-7. JetBrains/thinkrail，本周 +5,760⭐。TypeScript 写的 Vibe 代码 IDE，可以自定义工作流程。
+🆕 Leonxlnx/taste-skill，本周 +5,336⭐。这个项目为 coding agents 提供了艺术指导、参考图像和浏览器检查等技能，可以让你的 AI 在编码时更有“品味”。
 
-8. pingdotgg/t3code，本周 +6,926⭐。这个 TypeScript 项目暂时没有描述。
+🆕 anthropics/skills，本周 +2,600⭐。这是一个公共仓库，收集了各种 Agent Skills，对于想要探索 AI 技能的项目来说是个好地方。
 
-9. multica-ai/andrej-karpathy-skills，本周 +4,459⭐。这个项目提供了一个 CLAUDE.md 文件，基于 Andrej Karpathy 的 LLM 编码陷阱观察来改进 Claude Code 的行为。
+🆕 YuJunZhiXue/dsh-purge，本周 +6,644⭐。这是一个 DeepSeek Harness 破甲工具，可以让所有模型都能破甲，对于想要测试模型能力的人来说是个好工具。
 
-10. jakubkrehel/skills，本周 +1,607⭐。Markdown 格式的代理技能集合，帮助你构建出色的界面。
+🆕 ghostty-org/ghostty，本周 +589⭐。这是一个快速、功能丰富的跨平台终端模拟器，使用平台原生 UI 和 GPU 加速，对于喜欢使用终端的人来说是个不错的选择。
 
-11. TauricResearch/TradingAgents，本周 +5,432⭐。Python 编写的多代理 LLM 财务交易框架。
+上次就在、这次还在榜上的有：pbakaus/impeccable、cloudflare/security-audit-skill、obra/superpowers、TauricResearch/TradingAgents、affaan-m/ECC（这些都是关于 AI Agent 的技能和框架，持续受到关注）。
 
-12. Leonxlnx/taste-skill，本周 +5,336⭐。JavaScript 编写的编码代理技能，给代理添加艺术方向、参考图片和浏览器检查，而不是通用的 AI 页面。
-
-13. anthropics/skills，本周 +2,600⭐。Python 编写的公共代理技能存储库。
-
-14. affaan-m/ECC，本周 +6,299⭐。JavaScript 编写的代理性能优化系统，适用于 Claude Code、Codex、Opencode、Cursor 等多种模型。
-
-15. YuJunZhiXue/dsh-purge，本周 +6,644⭐。JavaScript 编写的 DeepSeek Harness 破甲，可以让所有模型都能破甲，不同模型可以更换不同的提示词。
-
-16. ghostty-org/ghostty，本周 +589⭐。Zig 编写的快速、功能丰富的跨平台终端模拟器。
-
-趋势总结：这周还是 coding agent 的 skill 最多，直接跟小模型训练或游戏 AI 相关的新项目不多，最值得看的是 Nutlope/hallmark 和 pbakaus/impeccable，它们分别提供了 UI 设计和编码代理的技能，对于游戏开发和 AI 代理的设计都很有帮助。
+趋势总结：这周还是 coding agent 的 skill 最多，直接跟小模型训练或游戏 AI 相关的新项目不多，最值得看的是 Nutlope/hallmark 和 thedotmack/claude-mem，一个是反 AI 拖沓设计，一个是跨会话持久上下文，都是提升 AI 交互体验的好工具。
