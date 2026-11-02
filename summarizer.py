@@ -52,6 +52,12 @@ def generate_weekly_digest(
         print("[提示] 未检测到 DEEPSEEK_API_KEY / OPENAI_API_KEY，使用基础模板生成预览。")
         return build_fallback_summary(new_repos, retained_repos, last_date_str, recipient_name)
 
+    # 修复 httpx 对 NO_PROXY 包含 ::1 或 [::1] 时的解析 bug
+    for key in ("NO_PROXY", "no_proxy"):
+        val = os.environ.get(key)
+        if val:
+            os.environ[key] = ",".join(p for p in val.split(",") if p not in ("::1", "[::1]"))
+
     from openai import OpenAI
     client = OpenAI(api_key=api_key, base_url=base_url)
 
