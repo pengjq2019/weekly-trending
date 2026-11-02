@@ -33,10 +33,10 @@ jobs:
       - name: 执行热榜抓取、AI提炼与微信推送
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
-          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY || vars.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || vars.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL || vars.OPENAI_MODEL }}
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN || vars.PUSHPLUS_TOKEN }}
           SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
           WECHAT_WORK_KEY: ${{ secrets.WECHAT_WORK_KEY }}
           RECIPIENT_NAME: '嘉贤'
