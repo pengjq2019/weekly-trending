@@ -45,12 +45,25 @@ def generate_weekly_digest(
     生成个性化周报
     """
     api_key = api_key or os.getenv("DEEPSEEK_API_KEY") or os.getenv("OPENAI_API_KEY")
-    base_url = base_url or os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")
-    model = model or os.getenv("OPENAI_MODEL", "deepseek-chat")
+    base_url = (base_url or os.getenv("OPENAI_BASE_URL") or "").strip()
+    model = (model or os.getenv("OPENAI_MODEL") or "").strip()
 
     if not api_key:
         print("[提示] 未检测到 DEEPSEEK_API_KEY / OPENAI_API_KEY，使用基础模板生成预览。")
         return build_fallback_summary(new_repos, retained_repos, last_date_str, recipient_name)
+
+    # 智能推导模型厂商与 endpoint (智谱 GLM 或 DeepSeek)
+    if not base_url:
+        if os.getenv("DEEPSEEK_API_KEY"):
+            base_url = "https://api.deepseek.com"
+            model = model or "deepseek-chat"
+        else:
+            # 默认为智谱 AI (以 . 分隔的 API Key 也是智谱的典型格式)
+            base_url = "https://open.bigmodel.cn/api/paas/v4/"
+            model = model or "glm-4-flash"
+
+    if not model:
+        model = "glm-4-flash" if "bigmodel.cn" in base_url else "deepseek-chat"
 
     # 修复 httpx 对 NO_PROXY 包含 ::1 或 [::1] 时的解析 bug
     for key in ("NO_PROXY", "no_proxy"):

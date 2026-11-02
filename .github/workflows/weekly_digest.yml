@@ -34,17 +34,17 @@ jobs:
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || vars.OPENAI_BASE_URL || 'https://open.bigmodel.cn/api/paas/v4/' }}
-          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL || vars.OPENAI_MODEL || 'glm-4-flash' }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
           WECHAT_WORK_KEY: ${{ secrets.WECHAT_WORK_KEY }}
-          RECIPIENT_NAME: ${{ vars.RECIPIENT_NAME || '嘉贤' }}
-          USER_INTERESTS: ${{ vars.USER_INTERESTS || 'AI Agent、游戏开发/Unity、音色克隆与多模态、代码辅助工具与架构、开源工具生态' }}
+          RECIPIENT_NAME: '嘉贤'
         run: |
           python main.py
 
       - name: 将历史记录与最新简报提交回仓库
+        continue-on-error: true
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -53,5 +53,5 @@ jobs:
             echo "没有需要提交的新内容"
           else
             git commit -m "chore: update trending digest & history [skip ci]"
-            git push
+            git push || echo "提示：如需将更新记录回写仓库，请在仓库 Settings -> Actions -> General 中勾选 'Read and write permissions'。"
           fi
