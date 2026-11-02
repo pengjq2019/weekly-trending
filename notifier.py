@@ -9,8 +9,12 @@ from typing import Optional, Dict
 
 
 def send_pushplus(content: str, token: str, title: str = "每周 GitHub 热榜简报") -> bool:
-    """通过 PushPlus 推送到微信"""
-    url = "http://www.pushplus.plus/send"
+    """通过 PushPlus (HTTPS) 推送到微信"""
+    token = token.strip()
+    masked = f"{token[:4]}****{token[-4:]}" if len(token) > 8 else "****"
+    print(f"[PushPlus] 使用 Token: {masked} 发起微信推送...")
+
+    url = "https://www.pushplus.plus/send"
     data = {
         "token": token,
         "title": title,
@@ -18,22 +22,23 @@ def send_pushplus(content: str, token: str, title: str = "每周 GitHub 热榜�
         "template": "markdown",
     }
     try:
-        resp = requests.post(url, json=data, timeout=15)
+        resp = requests.post(url, json=data, timeout=20)
+        print(f"[PushPlus] 服务器响应 HTTP {resp.status_code}: {resp.text}")
         res_json = resp.json()
         if res_json.get("code") == 200:
-            print("[PushPlus] 微信推送成功！")
+            print("[PushPlus] 🎉 微信推送成功！")
             return True
         else:
-            print(f"[PushPlus] 推送返回错误: {res_json.get('msg')}")
+            print(f"[PushPlus] ❌ 推送返回错误: {res_json.get('msg')} (code: {res_json.get('code')})")
             return False
     except Exception as e:
-        print(f"[PushPlus] 发送异常: {e}")
+        print(f"[PushPlus] ❌ 发送异常: {e}")
         return False
 
 
 def send_serverchan(content: str, sendkey: str, title: str = "每周 GitHub 热榜简报") -> bool:
     """通过 Server酱 (Turbo版) 推送到微信"""
-    url = f"https://sctapi.ftqq.com/{sendkey}.send"
+    url = f"https://sctapi.ftqq.com/{sendkey.strip()}.send"
     data = {
         "title": title,
         "desp": content,
@@ -42,19 +47,19 @@ def send_serverchan(content: str, sendkey: str, title: str = "每周 GitHub 热�
         resp = requests.post(url, data=data, timeout=15)
         res_json = resp.json()
         if res_json.get("code") == 0:
-            print("[Server酱] 微信推送成功！")
+            print("[Server酱] 🎉 微信推送成功！")
             return True
         else:
-            print(f"[Server酱] 推送返回错误: {res_json.get('message')}")
+            print(f"[Server酱] ❌ 推送返回错误: {res_json.get('message')}")
             return False
     except Exception as e:
-        print(f"[Server酱] 发送异常: {e}")
+        print(f"[Server酱] ❌ 发送异常: {e}")
         return False
 
 
 def send_wechat_work_webhook(content: str, webhook_key: str) -> bool:
     """通过企业微信机器人 Webhook 推送"""
-    url = f"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key={webhook_key}"
+    url = f"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key={webhook_key.strip()}"
     data = {
         "msgtype": "markdown",
         "markdown": {
@@ -65,13 +70,13 @@ def send_wechat_work_webhook(content: str, webhook_key: str) -> bool:
         resp = requests.post(url, json=data, timeout=15)
         res_json = resp.json()
         if res_json.get("errcode") == 0:
-            print("[企业微信机器人] 推送成功！")
+            print("[企业微信机器人] 🎉 推送成功！")
             return True
         else:
-            print(f"[企业微信机器人] 推送失败: {res_json.get('errmsg')}")
+            print(f"[企业微信机器人] ❌ 推送失败: {res_json.get('errmsg')}")
             return False
     except Exception as e:
-        print(f"[企业微信机器人] 发送异常: {e}")
+        print(f"[企业微信机器人] ❌ 发送异常: {e}")
         return False
 
 
@@ -92,26 +97,40 @@ def notify(content: str, title: str = "每周 GitHub 热榜简报") -> Dict[str,
     # 1. 本地始终保存一份
     save_local_archive(content)
 
-    # 2. PushPlus
-    pushplus_token = os.getenv("PUSHPLUS_TOKEN")
+    # 2. PushPlus (兼容常见命名大小写与格式)
+    pushplus_token = (
+        os.getenv("PUSHPLUS_TOKEN")
+        or os.getenv("PUSH_PLUS_TOKEN")
+        or os.getenv("PUSHPLUS")
+        or ""
+    ).strip()
+
     if pushplus_token:
         results["pushplus"] = send_pushplus(content, pushplus_token, title)
         pushed = True
 
     # 3. Server酱
-    serverchan_key = os.getenv("SERVERCHAN_KEY")
+    serverchan_key = (os.getenv("SERVERCHAN_KEY") or "").strip()
     if serverchan_key:
         results["serverchan"] = send_serverchan(content, serverchan_key, title)
         pushed = True
 
     # 4. 企业微信机器人
-    wechat_work_key = os.getenv("WECHAT_WORK_KEY")
+    wechat_work_key = (os.getenv("WECHAT_WORK_KEY") or "").strip()
     if wechat_work_key:
         results["wechat_work"] = send_wechat_work_webhook(content, wechat_work_key)
         pushed = True
 
     if not pushed:
-        print("[提示] 未检测到推送密钥（PUSHPLUS_TOKEN / SERVERCHAN_KEY / WECHAT_WORK_KEY）。")
-        print("简报已保存至 latest_report.md，配置密钥后即可自动推送到微信。")
+        print("\n========================================================")
+        print("⚠️ [错误] 未检测到任何推送密钥！")
+        print("请检查 GitHub 仓库 -> Settings -> Secrets and variables -> Actions")
+        print("确保已添加名为 PUSHPLUS_TOKEN 的 Repository secret！")
+        print("========================================================\n")
+        raise RuntimeError("未配置 PUSHPLUS_TOKEN，微信推送未执行。")
+
+    # 如果尝试推送了但全部失败，抛出错误以便在 Actions 日志中明确定位
+    if not any(results.values()):
+        raise RuntimeError("推送请求已发出，但所有通道均返回失败，请查看上方详细日志。")
 
     return results
