@@ -12,7 +12,7 @@ def build_fallback_summary(
     new_repos: List[Dict],
     retained_repos: List[Dict],
     last_date_str: str,
-    recipient_name: str = "嘉贤",
+    recipient_name: str = "彭杰仔",
 ) -> str:
     """当未配置 API Key 时提供的格式化降级简报"""
     date_marker = f"（自 {last_date_str} 以来）" if last_date_str else "（本期）"
@@ -35,7 +35,7 @@ def generate_weekly_digest(
     new_repos: List[Dict],
     retained_repos: List[Dict],
     last_date_str: str = "",
-    recipient_name: str = "嘉贤",
+    recipient_name: str = "彭杰仔",
     user_interests: str = "AI Agent、游戏开发/Unity、音色克隆与多模态、代码辅助工具与架构",
     api_key: Optional[str] = None,
     base_url: Optional[str] = None,

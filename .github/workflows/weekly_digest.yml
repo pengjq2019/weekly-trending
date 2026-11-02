@@ -39,7 +39,7 @@ jobs:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN || vars.PUSHPLUS_TOKEN }}
           SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
           WECHAT_WORK_KEY: ${{ secrets.WECHAT_WORK_KEY }}
-          RECIPIENT_NAME: '嘉贤'
+          RECIPIENT_NAME: ${{ vars.RECIPIENT_NAME || '彭杰仔' }}
         run: |
           python main.py
 

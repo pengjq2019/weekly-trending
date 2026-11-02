@@ -31,8 +31,8 @@ def main():
     )
     parser.add_argument(
         "--name",
-        default=os.getenv("RECIPIENT_NAME", "嘉贤"),
-        help="简报收件人称呼 (默认: 嘉贤)",
+        default=os.getenv("RECIPIENT_NAME", "彭杰仔"),
+        help="简报收件人称呼 (默认: 彭杰仔)",
     )
     parser.add_argument(
         "--interests",
@@ -94,7 +94,7 @@ def main():
 
     # 4. 推送通知
     print("[4/4] 正在推送到已配置的通知渠道...")
-    notify(digest_content, title=f"每周 GitHub 热榜简报 ({args.name})")
+    notify(digest_content, title="每周 GitHub 热榜简报")
 
     # 5. 更新并持久化历史记录
     save_history(repos, history_file=args.history_file)
