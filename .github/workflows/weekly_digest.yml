@@ -2,8 +2,9 @@ name: Weekly GitHub Trending Digest
 
 on:
   schedule:
-    # 每周一早晨 09:00 (北京时间 UTC+8，即 UTC 01:00) 自动触发
-    - cron: '0 1 * * 1'
+    # 每周一早晨 09:15 (北京时间 UTC+8，即 UTC 01:15) 自动触发
+    # 避开整点(:00)的 GitHub 全球调度高峰与丢单机制
+    - cron: '15 1 * * 1'
   workflow_dispatch:
 
 permissions:
