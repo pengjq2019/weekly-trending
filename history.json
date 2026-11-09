@@ -1,23 +1,24 @@
 {
-  "last_run_date": "11/02",
-  "last_run_iso": "2026-11-02T09:59:52.844731",
+  "last_run_date": "11/09",
+  "last_run_iso": "2026-11-09T08:20:49.661682",
   "last_repos": [
-    "Nutlope/hallmark",
-    "pbakaus/impeccable",
-    "AgriciDaniel/claude-seo",
+    "NVIDIA/auto-ontology",
     "thedotmack/claude-mem",
-    "cloudflare/security-audit-skill",
-    "obra/superpowers",
-    "JetBrains/thinkrail",
-    "pingdotgg/t3code",
-    "multica-ai/andrej-karpathy-skills",
-    "jakubkrehel/skills",
-    "TauricResearch/TradingAgents",
-    "Leonxlnx/taste-skill",
+    "max-sixty/worktrunk",
     "anthropics/skills",
-    "affaan-m/ECC",
-    "YuJunZhiXue/dsh-purge",
-    "ghostty-org/ghostty"
+    "Donchitos/Claude-Code-Game-Studios",
+    "milind-soni/OpenMausBot",
+    "pingdotgg/t3code",
+    "Nutlope/hallmark",
+    "Renhuai123/ziwei-doushu",
+    "D4Vinci/Scrapling",
+    "vercel-labs/agent-browser",
+    "mattpocock/skills",
+    "jakubkrehel/skills",
+    "github/spec-kit",
+    "The-PR-Agent/pr-agent",
+    "hyprwm/Hyprland",
+    "blader/humanizer"
   ],
   "history_archive": {
     "debpalash/VoiceStudio": {
@@ -36,7 +37,8 @@
     },
     "Nutlope/hallmark": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/09"
     },
     "AgriciDaniel/claude-seo": {
       "first_seen": "11/02",
@@ -44,7 +46,8 @@
     },
     "thedotmack/claude-mem": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/09"
     },
     "obra/superpowers": {
       "first_seen": "11/02",
@@ -56,7 +59,8 @@
     },
     "pingdotgg/t3code": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/09"
     },
     "multica-ai/andrej-karpathy-skills": {
       "first_seen": "11/02",
@@ -64,7 +68,8 @@
     },
     "jakubkrehel/skills": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/09"
     },
     "TauricResearch/TradingAgents": {
       "first_seen": "11/02",
@@ -76,7 +81,8 @@
     },
     "anthropics/skills": {
       "first_seen": "11/02",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/09"
     },
     "affaan-m/ECC": {
       "first_seen": "11/02",
@@ -88,6 +94,54 @@
     },
     "ghostty-org/ghostty": {
       "first_seen": "11/02",
+      "times_seen": 1
+    },
+    "NVIDIA/auto-ontology": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "max-sixty/worktrunk": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "Donchitos/Claude-Code-Game-Studios": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "milind-soni/OpenMausBot": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "Renhuai123/ziwei-doushu": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "D4Vinci/Scrapling": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "vercel-labs/agent-browser": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "mattpocock/skills": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "github/spec-kit": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "The-PR-Agent/pr-agent": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "hyprwm/Hyprland": {
+      "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "blader/humanizer": {
+      "first_seen": "11/09",
       "times_seen": 1
     }
   }
