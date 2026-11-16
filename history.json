@@ -1,24 +1,18 @@
 {
-  "last_run_date": "11/09",
-  "last_run_iso": "2026-11-09T08:20:49.661682",
+  "last_run_date": "11/16",
+  "last_run_iso": "2026-11-16T02:29:58.294598",
   "last_repos": [
-    "NVIDIA/auto-ontology",
-    "thedotmack/claude-mem",
-    "max-sixty/worktrunk",
+    "meta/astryx",
     "anthropics/skills",
-    "Donchitos/Claude-Code-Game-Studios",
-    "milind-soni/OpenMausBot",
-    "pingdotgg/t3code",
-    "Nutlope/hallmark",
-    "Renhuai123/ziwei-doushu",
-    "D4Vinci/Scrapling",
+    "sherlock-project/sherlock",
+    "backnotprop/plannotator",
     "vercel-labs/agent-browser",
-    "mattpocock/skills",
-    "jakubkrehel/skills",
-    "github/spec-kit",
-    "The-PR-Agent/pr-agent",
-    "hyprwm/Hyprland",
-    "blader/humanizer"
+    "ZhuLinsen/daily_stock_analysis",
+    "we-promise/sure",
+    "milind-soni/OpenMausBot",
+    "google/elephant-goldfish-model",
+    "google-deepmind/mujoco",
+    "addyosmani/agent-skills"
   ],
   "history_archive": {
     "debpalash/VoiceStudio": {
@@ -81,8 +75,8 @@
     },
     "anthropics/skills": {
       "first_seen": "11/02",
-      "times_seen": 2,
-      "last_seen": "11/09"
+      "times_seen": 3,
+      "last_seen": "11/16"
     },
     "affaan-m/ECC": {
       "first_seen": "11/02",
@@ -110,7 +104,8 @@
     },
     "milind-soni/OpenMausBot": {
       "first_seen": "11/09",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/16"
     },
     "Renhuai123/ziwei-doushu": {
       "first_seen": "11/09",
@@ -122,7 +117,8 @@
     },
     "vercel-labs/agent-browser": {
       "first_seen": "11/09",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/16"
     },
     "mattpocock/skills": {
       "first_seen": "11/09",
@@ -142,6 +138,38 @@
     },
     "blader/humanizer": {
       "first_seen": "11/09",
+      "times_seen": 1
+    },
+    "meta/astryx": {
+      "first_seen": "11/16",
+      "times_seen": 1
+    },
+    "sherlock-project/sherlock": {
+      "first_seen": "11/16",
+      "times_seen": 1
+    },
+    "backnotprop/plannotator": {
+      "first_seen": "11/16",
+      "times_seen": 1
+    },
+    "ZhuLinsen/daily_stock_analysis": {
+      "first_seen": "11/16",
+      "times_seen": 1
+    },
+    "we-promise/sure": {
+      "first_seen": "11/16",
+      "times_seen": 1
+    },
+    "google/elephant-goldfish-model": {
+      "first_seen": "11/16",
+      "times_seen": 1
+    },
+    "google-deepmind/mujoco": {
+      "first_seen": "11/16",
+      "times_seen": 1
+    },
+    "addyosmani/agent-skills": {
+      "first_seen": "11/16",
       "times_seen": 1
     }
   }

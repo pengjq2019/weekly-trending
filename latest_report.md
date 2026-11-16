@@ -1,29 +1,21 @@
-彭杰仔，这周 GitHub 热榜的简报来了。🆕 表示 11/02 那次简报之后新上榜的项目：
+彭杰仔，这周 GitHub 热榜的简报来了。🆕 表示 11/09 那次简报之后新上榜的项目：
 
-🆕 NVIDIA/auto-ontology，+9,327⭐。这个 Python 框架是用来构建语义、基于图的推理层的，对于 LLM 和 agent 的工作流程来说，它能实现确定性查询生成、更好的上下文检索和更可解释的 AI。如果你在做 agent 的记忆设计，这个框架很值得参考。
+🆕 meta/astryx，本周 +13,501⭐。这是一个完全可定制的开源设计系统，而且对 agent 准备得相当到位。如果你在找能快速搭起来还能自定义的 UI 设计系统，这个值得一看。
 
-🆕 max-sixty/worktrunk，+2,313⭐。这个 Rust 编写的 CLI 工具，是 Git worktree 管理的，特别适合并行 AI agent 的工作流程。Unity 项目变大，可以用它来管理代码，挺实用的。
+🆕 sherlock-project/sherlock，本周 +10,412⭐。用 Python 编写的社交网络用户名搜索工具。如果你需要追踪某个用户的社交媒体账号，这个工具可能帮到你。
 
-🆕 Donchitos/Claude-Code-Game-Studios，+5,235⭐。这个 Shell 编写的项目，把 Claude Code 变成了一个完整的游戏开发工作室，有 49 个 AI agent、72 个工作流程技能，还有一个完整的协调系统，模仿真实工作室的等级制度。
+🆕 backnotprop/plannotator，本周 +1,719⭐。一个用来跟踪 agent 的 workspace，能帮你塑造、决策、规划、注释代码，还能一键分享给团队。宠物 agent 的记忆设计很值得参考它。
 
-🆕 milind-soni/OpenMausBot，+7,621⭐。这个 TypeScript 编写的开源 Grok Bot 替代品，有一个虚拟机，bot 可以在其中使用。
+🆕 ZhuLinsen/daily_stock_analysis，本周 +4,548⭐。这个项目是 LLM 驱动的股票智能分析系统，多市场行情、实时新闻、决策看板，还能自动推送。Unity 项目变大可以用它来管理代码。
 
-🆕 Renhuai123/ziwei-doushu，+4,191⭐。这是一个基于倪海厦《天纪》体系的紫微斗数开源排盘引擎，包含了完整的排盘算法、四化系统、格局知识库和古籍原文数据。
+🆕 we-promise/sure，本周 +4,556⭐。一个面向所有人的个人财务应用，看起来是开源的。专门用来去掉界面上的 AI 味。
 
-🆕 D4Vinci/Scrapling，+8,342⭐。这个 Python 编写的 Web Scraping 框架，可以处理从单个请求到全规模爬取的一切！热度不低，但仓库没写简介。
+🆕 google/elephant-goldfish-model，本周 +5,060⭐。一个开源的软件设计审查 agent 插件，看看就好，不建议用。
 
-🆕 vercel-labs/agent-browser，+2,190⭐。这个 Rust 编写的浏览器自动化 CLI，适合 AI agent 使用。
+🆕 google-deepmind/mujoco，本周 +1,922⭐。一个通用的物理模拟器，用 C++ 编写。
 
-🆕 mattpocock/skills，+9,635⭐。这个 Shell 编写的技能集，是真实工程师的必备，直接从 .agents 目录中获取。
+🆕 addyosmani/agent-skills，本周 +3,889⭐。为 AI coding agent 提供的生产级工程技能。直接跟小模型训练或游戏 AI 相关的新项目不多，最值得看的是这个和 meta/astryx。
 
-🆕 github/spec-kit，+4,045⭐。这个 Python 工具包，可以帮助你开始 SDD 或任何其他流程。
+上次就在、这次还在榜上的有：anthropics/skills、vercel-labs/agent-browser、milind-soni/OpenMausBot（人工智能技能公开仓库、AI 代理浏览器自动化 CLI、开源 Grok Bot 替代品）。
 
-🆕 The-PR-Agent/pr-agent，+1,706⭐。这个 Python 编写的项目，是原始的开源 PR 审查工具。
-
-🆕 hyprwm/Hyprland，+1,465⭐。这个 C++ 编写的独立、高度可定制的动态布局 Wayland compositor，外观上也不逊色。
-
-🆕 blader/humanizer，+3,118⭐。这个 Python 编写的 agent 技能，可以移除文本中 AI 生成的写作痕迹。
-
-上次就在、这次还在榜上的有：thedotmack/claude-mem、anthropics/skills、pingdotgg/t3code、Nutlope/hallmark、jakubkrehel/skills（这些都是 AI Agent 技能相关的项目）。
-
-趋势总结：这周还是 coding agent 的 skill 最多，直接跟小模型训练或游戏 AI 相关的新项目不多，最值得看的是 NVIDIA/auto-ontology 和 D4Vinci/Scrapling。
+趋势总结：这周还是 coding agent 的 skill 最多，直接跟小模型训练或游戏 AI 相关的新项目不多，最值得看的是 addyosmani/agent-skills 和 meta/astryx。
