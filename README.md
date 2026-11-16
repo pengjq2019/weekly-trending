@@ -1,6 +1,6 @@
 # 🤖 Weekly GitHub Trending Digest（每周 GitHub 热榜简报）
 
-自动抓取 GitHub Trending 周榜，利用 **增量历史追踪** 标记 🆕 新晋项目与持续在榜项目，配合 **DeepSeek / OpenAI 大模型** 进行地道、敏锐的业务场景点评，并于 **每周一早晨 9:00 自动推送到你的微信**。
+自动抓取 GitHub Trending 周榜，利用 **增量历史追踪** 标记 🆕 新晋项目与持续在榜项目，配合 **DeepSeek / OpenAI 大模型** 进行地道、敏锐的业务场景点评，并于 **每周六早晨 9:00 自动推送到你的微信**。
 
 ---
 
@@ -19,7 +19,7 @@
 ```text
 ├── .github/
 │   └── workflows/
-│       └── weekly_digest.yml     # GitHub Actions 定时工作流 (每周一 09:00 自动运行)
+│       └── weekly_digest.yml     # GitHub Actions 定时工作流 (每周六 09:00 自动运行)
 ├── scraper.py                    # GitHub Trending 页面抓取与数据清洗
 ├── history.py                    # 历史记录管理与增量比对 (标记 🆕 与持续在榜)
 ├── summarizer.py                 # 大模型 Prompt 组装与个性化点评生成 (支持 DeepSeek/OpenAI)
