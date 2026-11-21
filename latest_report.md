@@ -1,21 +1,25 @@
-彭杰仔，这周 GitHub 热榜的简报来了。🆕 表示 11/09 那次简报之后新上榜的项目：
+彭杰仔，这周 GitHub 热榜的简报来了。🆕 表示 11/16 那次简报之后 新上榜的项目：
 
-🆕 meta/astryx，本周 +13,501⭐。这是一个完全可定制的开源设计系统，而且对 agent 准备得相当到位。如果你在找能快速搭起来还能自定义的 UI 设计系统，这个值得一看。
+🆕 google-labs-code/stitch-skills，+2,152⭐。这库里的 Agent Skills 是给 Stitch MCP 服务器用的，兼容像 Antigravity、Gemini CLI 这样的 coding agent，宠物 agent 的记忆设计很值得参考它。
 
-🆕 sherlock-project/sherlock，本周 +10,412⭐。用 Python 编写的社交网络用户名搜索工具。如果你需要追踪某个用户的社交媒体账号，这个工具可能帮到你。
+🆕 GoogleChrome/modern-web-guidance-src，+5,224⭐。这个库帮你跟上最新的 Web 最佳实践，Unity 项目变大可以用它来管理代码。
 
-🆕 backnotprop/plannotator，本周 +1,719⭐。一个用来跟踪 agent 的 workspace，能帮你塑造、决策、规划、注释代码，还能一键分享给团队。宠物 agent 的记忆设计很值得参考它。
+🆕 alibaba/open-code-review，+4,457⭐。这是阿里规模下的代码审查工具，有 LLM Agent 和内置的多语言规则集，专门用来去掉界面上的 AI 味。
 
-🆕 ZhuLinsen/daily_stock_analysis，本周 +4,548⭐。这个项目是 LLM 驱动的股票智能分析系统，多市场行情、实时新闻、决策看板，还能自动推送。Unity 项目变大可以用它来管理代码。
+🆕 mvanhorn/last30days-skill，+3,788⭐。这个 AI agent 技能能研究 Reddit、X、YouTube 等平台的任何话题，然后给出总结，适合做市场分析。
 
-🆕 we-promise/sure，本周 +4,556⭐。一个面向所有人的个人财务应用，看起来是开源的。专门用来去掉界面上的 AI 味。
+🆕 ChromeDevTools/chrome-devtools-mcp，+3,306⭐。Chrome DevTools 专为 coding agent 设计，对于调试和优化代码很有帮助。
 
-🆕 google/elephant-goldfish-model，本周 +5,060⭐。一个开源的软件设计审查 agent 插件，看看就好，不建议用。
+🆕 tradermonty/claude-trading-skills，+3,471⭐。Claude Code 的技能，适合股票投资者和交易者，市场分析、技术图表、经济日历等功能一应俱全。
 
-🆕 google-deepmind/mujoco，本周 +1,922⭐。一个通用的物理模拟器，用 C++ 编写。
+🆕 ag-ui-protocol/ag-ui，+3,621⭐。这个协议能让你把 Agent 带进前端应用，实现 Agent 和用户的互动。
 
-🆕 addyosmani/agent-skills，本周 +3,889⭐。为 AI coding agent 提供的生产级工程技能。直接跟小模型训练或游戏 AI 相关的新项目不多，最值得看的是这个和 meta/astryx。
+🆕 pookjw/HermesEnabler，+582⭐。这个项目能让任何 Apple Watch 设备使用 Hermès 表盘。
 
-上次就在、这次还在榜上的有：anthropics/skills、vercel-labs/agent-browser、milind-soni/OpenMausBot（人工智能技能公开仓库、AI 代理浏览器自动化 CLI、开源 Grok Bot 替代品）。
+🆕 dream-num/univer，+7,539⭐。用 Univer Office SDK 建立自己的 AI 办公室，把编辑、计算、协作等功能带进你的产品。
 
-趋势总结：这周还是 coding agent 的 skill 最多，直接跟小模型训练或游戏 AI 相关的新项目不多，最值得看的是 addyosmani/agent-skills 和 meta/astryx。
+🆕 kajisho5/ffmpeg-skill，+3,268⭐。这个本地视频编辑器为 coding agent 提供了 FFmpeg 工具，无需云服务或 API 密钥。
+
+上次就在、这次还在榜上的有：backnotprop/plannotator（代码协作与反馈工具）、meta/astryx（可定制和 Agent 准备好的开源设计系统）、we-promise/sure（个人财务管理应用）。
+
+趋势总结：这周还是 coding agent 的 skill 最多，直接跟小模型训练或游戏 AI 相关的新项目不多，最值得看的是 alibaba/open-code-review 和 ChromeDevTools/chrome-devtools-mcp。

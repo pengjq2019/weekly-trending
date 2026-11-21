@@ -1,18 +1,20 @@
 {
-  "last_run_date": "11/16",
-  "last_run_iso": "2026-11-16T02:29:58.294598",
+  "last_run_date": "11/21",
+  "last_run_iso": "2026-11-21T07:58:46.496701",
   "last_repos": [
-    "meta/astryx",
-    "anthropics/skills",
-    "sherlock-project/sherlock",
     "backnotprop/plannotator",
-    "vercel-labs/agent-browser",
-    "ZhuLinsen/daily_stock_analysis",
+    "google-labs-code/stitch-skills",
+    "GoogleChrome/modern-web-guidance-src",
+    "alibaba/open-code-review",
+    "mvanhorn/last30days-skill",
+    "ChromeDevTools/chrome-devtools-mcp",
+    "tradermonty/claude-trading-skills",
+    "ag-ui-protocol/ag-ui",
+    "meta/astryx",
+    "pookjw/HermesEnabler",
     "we-promise/sure",
-    "milind-soni/OpenMausBot",
-    "google/elephant-goldfish-model",
-    "google-deepmind/mujoco",
-    "addyosmani/agent-skills"
+    "dream-num/univer",
+    "kajisho5/ffmpeg-skill"
   ],
   "history_archive": {
     "debpalash/VoiceStudio": {
@@ -142,7 +144,8 @@
     },
     "meta/astryx": {
       "first_seen": "11/16",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/21"
     },
     "sherlock-project/sherlock": {
       "first_seen": "11/16",
@@ -150,7 +153,8 @@
     },
     "backnotprop/plannotator": {
       "first_seen": "11/16",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/21"
     },
     "ZhuLinsen/daily_stock_analysis": {
       "first_seen": "11/16",
@@ -158,7 +162,8 @@
     },
     "we-promise/sure": {
       "first_seen": "11/16",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/21"
     },
     "google/elephant-goldfish-model": {
       "first_seen": "11/16",
@@ -170,6 +175,46 @@
     },
     "addyosmani/agent-skills": {
       "first_seen": "11/16",
+      "times_seen": 1
+    },
+    "google-labs-code/stitch-skills": {
+      "first_seen": "11/21",
+      "times_seen": 1
+    },
+    "GoogleChrome/modern-web-guidance-src": {
+      "first_seen": "11/21",
+      "times_seen": 1
+    },
+    "alibaba/open-code-review": {
+      "first_seen": "11/21",
+      "times_seen": 1
+    },
+    "mvanhorn/last30days-skill": {
+      "first_seen": "11/21",
+      "times_seen": 1
+    },
+    "ChromeDevTools/chrome-devtools-mcp": {
+      "first_seen": "11/21",
+      "times_seen": 1
+    },
+    "tradermonty/claude-trading-skills": {
+      "first_seen": "11/21",
+      "times_seen": 1
+    },
+    "ag-ui-protocol/ag-ui": {
+      "first_seen": "11/21",
+      "times_seen": 1
+    },
+    "pookjw/HermesEnabler": {
+      "first_seen": "11/21",
+      "times_seen": 1
+    },
+    "dream-num/univer": {
+      "first_seen": "11/21",
+      "times_seen": 1
+    },
+    "kajisho5/ffmpeg-skill": {
+      "first_seen": "11/21",
       "times_seen": 1
     }
   }
