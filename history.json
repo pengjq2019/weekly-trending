@@ -1,10 +1,11 @@
 {
-  "last_run_date": "11/21",
-  "last_run_iso": "2026-11-21T07:58:46.496701",
+  "last_run_date": "11/28",
+  "last_run_iso": "2026-11-28T08:40:21.080488",
   "last_repos": [
     "backnotprop/plannotator",
     "google-labs-code/stitch-skills",
     "GoogleChrome/modern-web-guidance-src",
+    "n8n-io/nod",
     "alibaba/open-code-review",
     "mvanhorn/last30days-skill",
     "ChromeDevTools/chrome-devtools-mcp",
@@ -13,6 +14,7 @@
     "meta/astryx",
     "pookjw/HermesEnabler",
     "we-promise/sure",
+    "obsidianmd/obsidian-skills",
     "dream-num/univer",
     "kajisho5/ffmpeg-skill"
   ],
@@ -144,8 +146,8 @@
     },
     "meta/astryx": {
       "first_seen": "11/16",
-      "times_seen": 2,
-      "last_seen": "11/21"
+      "times_seen": 3,
+      "last_seen": "11/28"
     },
     "sherlock-project/sherlock": {
       "first_seen": "11/16",
@@ -153,8 +155,8 @@
     },
     "backnotprop/plannotator": {
       "first_seen": "11/16",
-      "times_seen": 2,
-      "last_seen": "11/21"
+      "times_seen": 3,
+      "last_seen": "11/28"
     },
     "ZhuLinsen/daily_stock_analysis": {
       "first_seen": "11/16",
@@ -162,8 +164,8 @@
     },
     "we-promise/sure": {
       "first_seen": "11/16",
-      "times_seen": 2,
-      "last_seen": "11/21"
+      "times_seen": 3,
+      "last_seen": "11/28"
     },
     "google/elephant-goldfish-model": {
       "first_seen": "11/16",
@@ -179,42 +181,60 @@
     },
     "google-labs-code/stitch-skills": {
       "first_seen": "11/21",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/28"
     },
     "GoogleChrome/modern-web-guidance-src": {
       "first_seen": "11/21",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/28"
     },
     "alibaba/open-code-review": {
       "first_seen": "11/21",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/28"
     },
     "mvanhorn/last30days-skill": {
       "first_seen": "11/21",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/28"
     },
     "ChromeDevTools/chrome-devtools-mcp": {
       "first_seen": "11/21",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/28"
     },
     "tradermonty/claude-trading-skills": {
       "first_seen": "11/21",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/28"
     },
     "ag-ui-protocol/ag-ui": {
       "first_seen": "11/21",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/28"
     },
     "pookjw/HermesEnabler": {
       "first_seen": "11/21",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/28"
     },
     "dream-num/univer": {
       "first_seen": "11/21",
-      "times_seen": 1
+      "times_seen": 2,
+      "last_seen": "11/28"
     },
     "kajisho5/ffmpeg-skill": {
       "first_seen": "11/21",
+      "times_seen": 2,
+      "last_seen": "11/28"
+    },
+    "n8n-io/nod": {
+      "first_seen": "11/28",
+      "times_seen": 1
+    },
+    "obsidianmd/obsidian-skills": {
+      "first_seen": "11/28",
       "times_seen": 1
     }
   }
